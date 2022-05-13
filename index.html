@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Tunes n Jamz</h1>
+
+    <section class="home-section">
+
+        <div class="carousel">
+            <img src="assets/images/cover5.jfif" class="active" alt="">
+            <img src="assets/images/cover3.jpg" alt="">
+            <img src="assets/images/cover7.jpg" alt="">
+            <img src="assets/images/cover6.jpg" alt="">
+            <img src="assets/images/cover9.jpg" alt="">
+            <img src="assets/images/cover4.jpg" alt="">
+            <img src="assets/images/cover1.webp" alt="">
+            <img src="assets/images/cover7.jpg" alt="">
+        </div>
+
+        <h1 class="heading">Explore</h1>
+        <div class="playlists-group">
+            <div class="playlist-card">
+                <img src="assets/images/cover7.jpg" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">What's New?</p>
+            </div>
+            <div class="playlist-card">
+                <img src="assets/images/cover2.jfif" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">Today's Top 10</p>
+            </div>
+            <div class="playlist-card">
+                <img src="assets/images/cover5.jfif" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">Top 100</p>
+            </div>
+            <div class="playlist-card">
+                <img src="assets/images/cover10.jpg" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">International Top Plays</p>
+            </div>
+            +
+        </div>
+
+        <div class="music-player-section">
+            <div class="box"></div>
+
+            <audio src="./assets/music/bankroll.mp3" id="song"></audio>
+            <img src="./assets/images/bankroll.jpg" id="thumbnail" />
+
+            <img src="./assets/images/icons/play.jpg" onclick="playPause()" id="play-pause" />
+            <img src="./assets/images/icons/forward.jpg" onclick="nextSong()" id="next-song" />
+            <img src="./assets/images/icons/back.jpg" onclick="previousSong()" id="previous-song" />
+
+            <div class="song-artist">Brockhampton ft. A$AP Ferg, A$AP Rocky</div>
+            <div class="song-title">BANKROLL</div>
+
+            <label for="progress-bar"><input
+                    type="range"
+                    id="progress-bar"
+                    min="0"
+                    max=""
+                    value="0"
+                    onchange="changeProgressBar()"
+            /></label>
+
+            <div class="currentTime"></div>
+            <div class="durationTime"></div>
+
+        </div>
+    </section>
+
+    <script src="music-file.js"></script>
+    <script src="music-app.js"></script>
+</body>
+</html>
+
+
+
+
